@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import course1 from "@/assets/course-1.jpg";
 import course2 from "@/assets/course-2.jpg";
 import course3 from "@/assets/course-3.jpg";
@@ -65,6 +66,16 @@ export const CoursesSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View All Courses Button */}
+        <div className="text-center mt-12">
+          <Link
+            to="/courses"
+            className="inline-block border border-foreground text-foreground px-10 py-4 text-xs tracking-[0.2em] uppercase hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+          >
+            View All Courses
+          </Link>
         </div>
       </div>
     </section>
